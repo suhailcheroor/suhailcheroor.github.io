@@ -1,278 +1,539 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Suhail Cheroor</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Suhail A B - Lead DevOps Engineer with 11+ years of experience in AWS, Kubernetes, Docker, and Infrastructure Automation">
+    <title>Suhail A B | Lead DevOps Engineer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
+    <!-- Navigation -->
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#projects">Project</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Suhail Cheroor</h1>
-            <h2>Engineer by heart!</h2>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                       A highly enthusiastic and motivated AWS CSA certified Devops Engineer with 10+ years of experience in Linux, Windows Server Administration, Virtualization, Cloud Technologies, Container Technologies  and Kubernetes. 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="April 2013 – May 2013">
-                <h3>Yahoo India</h3>
-                <h4>IT Engineer</h4>
-                <p>
-                    
-                </p>
-            </div>
-
-            <div data-date="June 2013 – July 2016">
-                <h3>Aptus Software Labs Pvt Ltd</h3>
-                <h4>Systems Engineer</h4>
-                <p>
-                   
-                </p>
-            </div>
-
-            <div data-date="January 2017 – April 2018">
-                <h3>Snapwiz Edutec India Private Limited</h3>
-                <h4>Devops Engineer</h4>
-                <p>
-                
-                </p>
-	</div>
-            <div data-date="April 2018 – November 2021">
-                <h3>TransNeuron Technologies Private Limited</h3>
-                <h4>Devops Engineer</h4>
-                <p>
-                
-                </p>
-		    </div>
-		    
-            <div data-date="November 2021 – Till date">
-                <h3>Encora Innovation Labs</h3>
-                <h4>Lead Devops Engineer</h4>
-                <p>
-                
-                </p>
-	          
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Annamalai University, Tamilnadu</h3>
-            <span class="education-date">May 2013 - Sept 2015</span>
-            <h4>Bachelor of Computer Application (BCA) </h4>
-            <p>
-            
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Technical Education Board of Kerala</h3>
-            <span class="education-date">June 2007 - April 2010</span>
-            <h4>Diploma in Computer Engineering </h4>
-            <ul>
+        <nav>
+            <a href="#" class="logo">Suhail<span>Cheroor</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/nagios_chef.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Nagios with Chef</h3>
-                        <p>
-                             Extensive role in configuring/managing the entire infrastructure using Chef and Nagios. Monitored around 1000 cross platform servers in Nagios with help of Chef. 
-                        </p>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/ansible_aws.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Ansible for Deployment</h3>
-                        <p>
-			    Implemented the entire Infrastructure for an online shopping portal including Webserver, Application Server, DB servers and monitoring on AWS using Ansible
-                        </p>
-                    </div>
-                     <!-- End .project-info -->
-                   </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/mariadb.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>MariaDB Galera Cluster with Floating IP</h3>
-                        <p>
-                            Maria DB Galera cluster of 3 machines with floting IP. Used Keepalived service to check the health of the MariDB server and floating IP used in Application. If primary MariaDB server goes down then IP will float to other server based on the priority which we have given.  
-			</p>
-                    </div>
-                    <!-- End .project-info -->
-
-
-               </div>
-                <!-- End .project -->
-
-		
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/elk.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>ELK Stack migration</h3>
-                        <p>
-                           Migrated ELK (ElasticSearch, Kibana, Logstash) cluster stack from version 2 to version 5 which was having almost a Terabyte of data. 
-			</p>
-                    </div>
-                     <!-- End .project-info -->
-                   </div>
-                <!-- End .project -->
-
-
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Suhail A B</h1>
+            <p class="tagline">Building Scalable Infrastructure & Cloud-Native Solutions</p>
+            <span class="role">Lead DevOps Engineer @ Encora Inc.</span>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/suhail-cheroor-02645a75/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/suhailcheroor" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/suhailcheroor" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
             </div>
         </div>
-    </div>
-    <!-- End #projects -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/profile-placeholder.svg" alt="Suhail A B" onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>End-to-End Infrastructure & Cloud Expert</h3>
+                    <p>
+                        Highly motivated and enthusiastic DevOps Engineer with 11+ years of experience in managing 
+                        end-to-end infrastructure across AWS Cloud and On-premises environments. Deep expertise in 
+                        Linux and Windows Server Administration, Virtualization, Containerization, Automation, and 
+                        CI/CD pipeline development.
+                    </p>
+                    <p>
+                        Extensive hands-on experience in architecting, implementing, and managing production workloads 
+                        on AWS, leveraging services such as EC2, EBS, S3, ECS, ELB, ALB, RDS, EFS, CloudFront, CloudWatch, 
+                        and Auto Scaling for scalable and secure deployments.
+                    </p>
+                    <p>
+                        Strong proficiency in Docker, Kubernetes (EKS), and Consul Service Mesh for microservices 
+                        orchestration and containerized application management, including setup, monitoring, and 
+                        troubleshooting of large-scale Kubernetes clusters.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="number">11+</div>
+                            <div class="label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">AWS</div>
+                            <div class="label">CSA Certified</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="number">K8s</div>
+                            <div class="label">Expert</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Linux</li>
-            <li>Windows</li>
-            <li>AWS</li>
-	    <li>Kubernetes</li>
-	    <li>MongoDB</li>
-            <li>MYSQL</li>
-            <li>Apache</li>
-            <li>Nginx</li>
-            <li>Nagios</li>
-            <li>Docker</li>
-            <li>Vagrant</li>
-            <li>Shell Scripting</li>
-            <li>Ansible</li>
-            <li>ELK</li>
-            <li>Graphite and Grafana</li>
-            <li>Python</li>
-            <li>Tomcat</li>
-            <li>RabbitMQ</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <p>My professional journey in DevOps and Cloud Engineering</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2021 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Encora Inc.</h3>
+                        <h4>Lead DevOps Engineer</h4>
+                        <p>Kubernetes cluster management, automation, and observability initiatives across AWS and on-premises environments, enhancing system scalability, reliability, and visibility.</p>
+                        <ul class="experience-list">
+                            <li>Managed and optimized Kubernetes clusters with a focus on scalability, reliability, and troubleshooting</li>
+                            <li>Implemented Consul and Istio Service Mesh integrations with Vault in AWS EKS for secure service communication</li>
+                            <li>Automated infrastructure provisioning and deployments using Terraform, Shell scripts, and GitHub-based CI/CD workflows</li>
+                            <li>Deployed Prometheus, Grafana, Jaeger, and Loki for monitoring, tracing, and centralized logging</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>AWS</span><span>EKS</span><span>K8s</span><span>Jenkins</span><span>Docker</span><span>Grafana</span><span>Terraform</span><span>Consul</span><span>Istio</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2018 - Nov 2021</div>
+                    <div class="timeline-content">
+                        <h3>TransNeuron Technologies Pvt Ltd</h3>
+                        <h4>Senior DevOps Engineer</h4>
+                        <p>Architected, implemented, and managed scalable production workloads on AWS while leading a 3-member DevOps team.</p>
+                        <ul class="experience-list">
+                            <li>Designed and implemented a scalable, flexible, and secure AWS infrastructure for the National Skill Development Portal</li>
+                            <li>Led a 3-member DevOps team, overseeing CI/CD pipelines, automation, and production environment stability</li>
+                            <li>Managed monolithic and containerized infrastructures using Docker, Ansible, Jenkins, and Kubernetes</li>
+                            <li>Administered DevOps tools including Nagios, MongoDB, MySQL, Redis, RabbitMQ, Nginx, Apache, Node, and Go servers</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>AWS</span><span>Docker</span><span>ECS</span><span>RDS</span><span>Nagios</span><span>MongoDB</span><span>Ansible</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2017 - Apr 2018</div>
+                    <div class="timeline-content">
+                        <h3>Snapwiz Edutec India Pvt Ltd</h3>
+                        <h4>DevOps Engineer</h4>
+                        <p>Managed infrastructure for Glider (AI-based talent assessment platform) and Edulastic (K-12 online assessment platform).</p>
+                        <ul class="experience-list">
+                            <li>Built and automated hybrid infrastructure using AWS services (EC2, RDS, ALB, EFS, Elastic Beanstalk)</li>
+                            <li>Implemented Docker-based deployments and automated workflows using Ansible, Jenkins, and Shell scripting</li>
+                            <li>Configured ELK stack monitoring and managed databases including MySQL, MongoDB, and Redis</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>Docker</span><span>AWS</span><span>Linux</span><span>ELK</span><span>Nagios</span><span>MongoDB</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2013 - Jul 2016</div>
+                    <div class="timeline-content">
+                        <h3>Aptus Software Labs</h3>
+                        <h4>Systems Engineer</h4>
+                        <p>Started as Linux Administrator, worked with clients including Warner Bros. Gaming, Galderma, and leading eCommerce applications.</p>
+                        <ul class="experience-list">
+                            <li>Administered Linux and Windows servers, managing AWS services (EC2, S3, ELB, Auto Scaling, CloudWatch)</li>
+                            <li>Worked with Chef, Ansible, Nagios, and Grafana to automate infrastructure setup and monitoring</li>
+                            <li>Led a NOC team of 10+ L1 engineers, overseeing production monitoring and first-line troubleshooting</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>Linux</span><span>AWS</span><span>Chef</span><span>Ansible</span><span>Nagios</span><span>Grafana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- End #contact -->
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fab fa-aws"></i> AWS Services</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">EBS</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">EFS</span>
+                        <span class="skill-tag">RDS</span>
+                        <span class="skill-tag">ELB/ALB</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">CloudFront</span>
+                        <span class="skill-tag">ECS</span>
+                        <span class="skill-tag">EKS</span>
+                        <span class="skill-tag">Elastic Beanstalk</span>
+                        <span class="skill-tag">Auto Scaling</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-dharmachakra"></i> Containers & Orchestration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">EKS</span>
+                        <span class="skill-tag">ECS</span>
+                        <span class="skill-tag">Consul Service Mesh</span>
+                        <span class="skill-tag">Istio</span>
+                        <span class="skill-tag">Vault</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> CI/CD & Automation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">GitLab CI/CD</span>
+                        <span class="skill-tag">ArgoCD</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Chef</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Monitoring & Logging</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Elasticsearch</span>
+                        <span class="skill-tag">Logstash</span>
+                        <span class="skill-tag">Kibana</span>
+                        <span class="skill-tag">Nagios</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">Jaeger</span>
+                        <span class="skill-tag">Loki</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MariaDB</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Vertica</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Web & App Servers</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Apache</span>
+                        <span class="skill-tag">Tomcat</span>
+                        <span class="skill-tag">JBoss</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Go Server</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-terminal"></i> Programming & Scripting</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">YAML</span>
+                        <span class="skill-tag">HCL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Operating Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Ubuntu</span>
+                        <span class="skill-tag">CentOS</span>
+                        <span class="skill-tag">RHEL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Projects</h2>
+                <p>Notable implementations and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                        <div class="project-icon"><i class="fas fa-dharmachakra"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kubernetes Cluster Management</h3>
+                        <p>Managed and optimized large-scale Kubernetes clusters with focus on scalability, reliability, and troubleshooting. Implemented Consul and Istio Service Mesh with Vault for secure service communication in AWS EKS.</p>
+                        <div class="project-tech">
+                            <span>K8s</span>
+                            <span>EKS</span>
+                            <span>Consul</span>
+                            <span>Istio</span>
+                            <span>Vault</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6, #a78bfa);">
+                        <div class="project-icon"><i class="fas fa-landmark"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>National Skill Development Portal</h3>
+                        <p>Designed and implemented a scalable, flexible, and secure AWS infrastructure for India's National Skill Development Portal. Led a 3-member DevOps team overseeing CI/CD pipelines and production stability.</p>
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>Jenkins</span>
+                            <span>Ansible</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a78bfa, #c4b5fd);">
+                        <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Observability Stack Implementation</h3>
+                        <p>Deployed comprehensive observability solution using Prometheus, Grafana, Jaeger, and Loki for monitoring, tracing, and centralized logging to enhance system visibility and performance insights.</p>
+                        <div class="project-tech">
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                            <span>Jaeger</span>
+                            <span>Loki</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #6366f1, #a78bfa);">
+                        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Glider & Edulastic Infrastructure</h3>
+                        <p>Built hybrid infrastructure for AI-based talent assessment platform (Glider) and K-12 online assessment platform (Edulastic). Implemented Docker-based deployments with ELK stack monitoring.</p>
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>ELK</span>
+                            <span>Elastic Beanstalk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);">
+                        <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Warner Bros. Gaming Infrastructure</h3>
+                        <p>Led NOC team of 10+ L1 engineers for production monitoring and troubleshooting. Automated infrastructure using Chef, Ansible, Nagios, and Grafana for diverse client projects.</p>
+                        <div class="project-tech">
+                            <span>Chef</span>
+                            <span>Ansible</span>
+                            <span>Nagios</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);">
+                        <div class="project-icon"><i class="fas fa-code-branch"></i></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>IaC & CI/CD Automation</h3>
+                        <p>Automated infrastructure provisioning and deployments using Terraform, Shell scripts, and GitHub-based CI/CD workflows. Ensured seamless build, deployment, and release processes across multiple environments.</p>
+                        <div class="project-tech">
+                            <span>Terraform</span>
+                            <span>GitHub Actions</span>
+                            <span>Jenkins</span>
+                            <span>Shell</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <p>Professional certifications and credentials</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS Certified Solutions Architect</h3>
+                    <p>Amazon Web Services</p>
+                    <span class="cert-id">AWS-ASA-119XX</span>
+                </div>
+                <div class="cert-card active">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Administration</h3>
+                    <p>GitHub Certified</p>
+                    <span class="cert-valid">Valid till Jan 2027</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Annamalai University, Tamil Nadu</h3>
+                        <h4>Bachelor of Computer Application (BCA)</h4>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Government Polytechnic College, Kasaragod</h3>
+                        <h4>Diploma in Computer Science (C.S)</h4>
+                        <p class="date">Technical Board of Kerala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2018 Suhail Cheroor
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://twitter.com/suhailcheroor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-
-                    </ul>
+            <div class="footer-content">
+                <p>&copy; 2025 Suhail A B. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/suhail-cheroor-02645a75/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/suhailcheroor" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/suhailcheroor" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 10, 15, 0.95)';
+            } else {
+                header.style.background = 'rgba(10, 10, 15, 0.9)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item, .skill-category, .project-card, .cert-card, .education-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>
