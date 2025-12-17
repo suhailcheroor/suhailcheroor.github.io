@@ -26,6 +26,12 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#education">Education</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -473,6 +479,21 @@
     </footer>
 
     <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
         // Mobile menu toggle
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.querySelector('.nav-links');
@@ -500,16 +521,6 @@
                     });
                 }
             });
-        });
-
-        // Add header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(10, 10, 15, 0.95)';
-            } else {
-                header.style.background = 'rgba(10, 10, 15, 0.9)';
-            }
         });
 
         // Animate elements on scroll
